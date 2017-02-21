@@ -3,17 +3,16 @@
   font-family: 'redbirdregular';
   color: #fff;
   background-color: transparent;
+  position: fixed;
 
   ul {
     padding: 0;
     list-style: none;
-    text-align: center;
+    //text-align: center;
     li {
       display: inline-block;
       font-size: 30px;
-      margin: 0 20px;
-
-
+      margin-right: 20px;
       a {
         text-decoration: none;
         color: #fff;
