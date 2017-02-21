@@ -1,7 +1,18 @@
+
 @import "fonts";
 
 body {
-  h1 {
-    font-family: 'redbirdregular';
-  }
+  // just for dev-------
+  background-color: #000;
+  color: #fff;
+  //--------------------
+
 }
+
+.container {
+  width: 1270px;
+  margin: 0 auto;
+}
+
+@import "header";
+@import "banner";

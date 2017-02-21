@@ -1,0 +1,30 @@
+.header {
+  width: 100%;
+  font-family: 'redbirdregular';
+  color: #fff;
+  background-color: transparent;
+
+  ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    li {
+      display: inline-block;
+      font-size: 30px;
+      margin: 0 20px;
+
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      :hover {
+        -webkit-border-image: url(../images/border.png) 3 stretch;
+        border-image: url(../images/border.png) 3 stretch;
+        border-bottom: 5px solid transparent;
+      }
+    }
+  }
+
+}
