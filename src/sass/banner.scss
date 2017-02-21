@@ -1,27 +1,95 @@
 .banner {
+
   width: 100%;
-  // .logo {
-  //   margin-left: 120px;
-  // }
+  position: relative;
 
   .artist-list {
     width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
 
     .artist {
-      width: 100%;
-      height: 300px;
       display: inline-block;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .one, .two, .three {
       position: relative;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 720px;
+
     }
 
     .one {
-      background: url(../images/lana.jpg) no-repeat center;
-      background-size: cover;
+      width: 35%;
+      background-image: url(../images/lana.jpg);
+      background-position-x: -465px;
+
+      i {
+        color: #bc1b20;
+      }
+    }
+
+    .two {
+      width: 29%;
+      background-image: url(../images/juanes.jpg);
+
+      i {
+        color: #279e92;
+      }
+    }
+
+    .three {
+      width: 35%;
+      background-image: url(../images/lily.jpg);
+      i {
+        color: #fbb962;
+      }
+
+    }
+
+    .logo {
+      position: absolute;
+      top: 0;
     }
 
     .art-text {
       position: absolute;
+      margin-left: 5%;
+      margin-bottom: 55px;
+      display: inline-block;
+      position: absolute;
       bottom: 0;
+
+      h3 {
+        font-size: 80px;
+        font-family: 'redbirdregular';
+      }
+
+      p {
+        font-size: 25px;
+        font-family: 'open_sansregular';
+        word-wrap: break-word;
+      }
+
+      button {
+        margin-top: 60px;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-size: 25px;
+        font-family: 'open_sansbold';
+
+      }
+    }
+
+    .rotated {
+      transform: rotate(-90deg);
     }
 
   }
