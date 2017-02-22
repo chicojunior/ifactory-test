@@ -15,15 +15,13 @@
     "build:styles": "run-s sass",
     "build:scripts": "cp -rf src/js dist && run-s uglify && run-s clean:scripts",
     "build:images": "cp -rf src/images dist",
-    "build:vendor": "cp -rf src/vendor dist",
     "build:fonts": "cp -rf src/fonts dist",
-    "build": "run-s clean build:templates build:styles build:scripts build:images build:vendor build:fonts",
+    "build": "run-s clean build:templates build:styles build:scripts build:images build:fonts",
     "watch:templates": "onchange 'src/*.html' -- npm run build:templates",
     "watch:styles": "onchange 'src/sass' -- npm run build:styles",
     "watch:scripts": "onchange 'src/js' -- npm run build:scripts",
     "watch:images": "onchange 'src/images' -- npm run build:images",
-    "watch:vendor": "onchange 'src/vendor' -- npm run build:vendor",
-    "watch": "run-p watch:templates watch:styles watch:scripts watch:images watch:vendor serve",
+    "watch": "run-p watch:templates watch:styles watch:scripts watch:images serve",
     "start": "run-s build watch"
   },
   "repository": {
